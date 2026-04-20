@@ -22,6 +22,11 @@ export default function List() {
             SetToDo((prevtodo)=>prevtodo.filter((task)=>task.id !== id))
     }
 
+    let reset = () => {
+        SetToDo([])
+
+    } 
+
     return(
         <>
         <form onSubmit={addnewtodo}>
@@ -39,6 +44,7 @@ export default function List() {
         <hr className='title' />
         <ul>
             {
+                
                 ToDo.map((item) => (
                   <span style={{display:'flex', flexWrap:'wrap', wordBreak: 'break-word'}}>
                     <li key={item.id} style={{ maxWidth:"40vw"  , flexWrap:'wrap', flexShrink: 0}}> {item.task} </li>
@@ -47,6 +53,7 @@ export default function List() {
                 ))
             }
         </ul>
+        {ToDo.length > 0 && <button onClick={reset}>reset</button>}
         </>
     )
 }

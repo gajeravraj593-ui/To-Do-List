@@ -80,7 +80,7 @@ li {
     justify-self: center;
     text-align: start;
     margin: 1.5vh auto;
-    padding-top: 12px;
+    padding-top: 13px;
 }
 
 .short {
@@ -91,7 +91,7 @@ li {
     .short {display: inline;}
     .full {display: none;}
     button {width: 16vw;}
-    .inp {width: 50vw; margin: auto 0px; padding-left: 0vw;}
+    .inp {width: 60vw; margin: auto 0px auto 5vw; padding-left: 0vw;}
     .titl, .title {justify-self: center;}
     .remove { width: 22vw; }
 }
