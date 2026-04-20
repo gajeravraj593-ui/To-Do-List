@@ -36,6 +36,7 @@ button {
     white-space: nowrap;
     border: 1px rgb(255, 255, 255) solid;
     transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px #666;   
 }
 
 .head {
@@ -60,14 +61,12 @@ button {
 
 button:hover {
   transform: scale(0.95);   
-   /* background-color: #3e8e41; */
-   box-shadow: 0 2px #666;   
+   /* background-color: #3e8e41; */   
 }
 
 button:active {
     transform: translateY(2px);
     background-color: #3e8e41;
-    box-shadow: 0 2px #000000;
 }
 
 ul {

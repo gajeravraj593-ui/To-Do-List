@@ -8,6 +8,7 @@ export default function List() {
     let [NewTask, SetNewTask] = useState("")
 
     let addnewtodo = () => {
+        if (NewTask.trim() === "") return;
         event.preventDefault();
         SetToDo((prevtodo)=>{return [...ToDo, { task: NewTask , id:uuidv4() }]})
         SetNewTask("")
