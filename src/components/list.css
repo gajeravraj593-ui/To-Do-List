@@ -80,6 +80,7 @@ li {
     justify-self: center;
     text-align: start;
     margin: 1.5vh auto;
+    padding-top: 12px;
 }
 
 .short {
